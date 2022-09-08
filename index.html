@@ -3,20 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Converter</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    
 </head>
 <body>
-    <div class="valute">
-        <p>EUR: <span class="eur"></span></p>
-        <p>USD: <span class="usd"></span></p>
-    </div>
     <hr>
+    <div class="valute">
+        <p class="first">
+            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.10754 13C4.21461 13 2.47317 11.327 1.81092 9.18083H0L0.387142 7.33429L9.3056 7.29721L9.0702 9.1927H4.45427C4.98038 10.1004 5.91066 10.7278 7.27062 10.7278C8.83054 10.7278 10.0898 10.2576 11.0187 9.54124L12 11.0081C10.8967 12.2006 9.27157 13 7.10754 13ZM8.12716 2.45762C7.46068 2.44233 6.80124 2.60279 6.20966 2.92421C5.61808 3.24563 5.1134 3.71765 4.74214 4.29675L9.68707 4.20034L9.44032 6.19076L0.0184355 6.30793L0.408414 4.37981L1.99244 4.34866C2.88301 1.95482 4.97046 0 8.17679 0C9.75372 0 11.013 0.559156 11.9234 1.44313L11.2243 3.2081C10.4741 2.74387 9.44883 2.45762 8.12716 2.45762Z" fill="black"/>
+            </svg>
+
+            EUR: <span class="eur"></span></p>
+        <p class="first">
+            <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 11.4243C10 13.5369 8.72066 14.9454 6.51576 15.3626L6.49899 16.9655L4.26056 17L4.23206 15.4206C2.69115 15.1665 0.91214 14.2788 0 13.4115L1.02783 11.5545C1.80751 12.025 3.60329 12.8986 4.73843 12.8939C5.93394 12.8939 6.69349 12.5677 6.69349 11.6768C6.69349 10.786 5.24313 10.0457 3.84306 9.30067C1.24245 7.91577 0.808182 6.81318 0.853454 5.35455C0.898726 3.89593 2.22166 2.55337 3.99396 2.03109L3.96043 0.053326L6.67673 0L6.65661 1.88209C8.1338 2.08755 9.22368 2.68826 9.72166 3.32817L8.4222 5.15066C7.75151 4.68014 6.91315 4.2849 5.93394 4.2849C4.59256 4.2849 3.9772 4.73033 3.9772 5.33103C3.9772 6.25639 5.89537 7.12686 7.30382 7.74167C9.13146 8.54627 10 9.98136 10 11.4243Z" fill="black"/>
+                </svg>
+
+            USD: <span class="usd"></span></p>
+    </div>
+
+    <hr>
+
     <div class="convert">
-        <p>Евро в рублях: <span class="eur-in-rub">0 Руб</span></p>
-        <p>Евро: <input type="text" class="eur-input"></p>
-        <p>Доллар в рублях: <span class="usd-in-rub">0 Руб</span></p>
-        <p>Доллар: <input type="text" class="usd-input"></p>
+        <div class="width">
+        
+        <p>Евро: <input type="text" class="eur-input "></p>
+
+        <p>
+            Евро в рублях: <span class="eur-in-rub">0 Руб</span>
+        </p>
+    <hr>    
+        <p>Доллар: <input type="text" class="usd-input "></p>
+
+        <p>
+            Доллар в рублях: <span class="usd-in-rub">0 Руб</span>
+        </p>
+
+
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
